@@ -1,7 +1,7 @@
 outime.teamspeak3-docker
 ========================
 
-Install and use TeamSpeak3 in Docker.
+Install and use TeamSpeak3 in Docker. It uses [aheil/teamspeak3-server](https://hub.docker.com/r/aheil/teamspeak3-server/) Docker image and currently assumes a mounted host volume containing TeamSpeak3 data. 
 
 Requirements
 ------------
