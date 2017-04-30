@@ -10,7 +10,8 @@ galaxy_info:
   platforms:
   - name: Ubuntu
   versions:
-  - all
+  - trusty
+  - xenial
 
   galaxy_tags:
   - teamspeak
