@@ -1,0 +1,5 @@
+---
+username: teamspeak
+uid: 1000
+host_volume: /home/teamspeak/teamspeak3-data
+container_restart_policy: always

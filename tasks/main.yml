@@ -1,0 +1,20 @@
+---
+- name: Create TeamSpeak3 user in the host
+  tags: teamspeak3-create-host-user
+  action: user name={{ username }} comment="Teamspeak 3 User" shell=/sbin/nologin uid={{ uid }}
+- name: Create TeamSpeak3 host directory if it does not exist
+  tags: teamspeak3-create-host-directory
+  action: file name={{ host_volume }} state=directory owner={{ username }} group=users
+- name: Run TeamSpeak3 Docker container
+  tags: teamspeak3-run-docker-container
+  docker_container:
+    name: teamspeak3
+    image: "aheil/teamspeak3-server"
+    state: started
+    published_ports:
+      - "9987:9987/udp"
+      - "10011:10011/tcp"
+      - "30033:30033/tcp"
+    restart_policy: "{{ container_restart_policy }}"
+    volumes:
+      - "{{ host_volume }}:/data:rw"

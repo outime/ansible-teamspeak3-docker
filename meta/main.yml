@@ -1,0 +1,27 @@
+---
+galaxy_info:
+  author: Ruben Diaz (outime)
+  description: Runs TeamSpeak 3 server with Docker.
+
+  license: MIT
+
+  min_ansible_version: 2.3
+
+  platforms:
+  - name: Ubuntu
+  versions:
+  - all
+
+  galaxy_tags:
+  - teamspeak
+  - teamspeak3
+  - ts3
+  - docker
+  - container
+  - gaming
+  - voice
+  - communication
+  - server
+  - cloud
+
+dependencies: []
