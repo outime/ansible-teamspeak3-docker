@@ -2,4 +2,5 @@
 username: teamspeak
 uid: 1000
 host_volume: /home/teamspeak/teamspeak3-data
+volume_mode: rw
 container_restart_policy: always
