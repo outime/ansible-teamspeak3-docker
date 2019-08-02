@@ -10,6 +10,7 @@
   docker_container:
     name: teamspeak3
     image: "aheil/teamspeak3-server"
+    pull: "{{ pull_image }}"
     state: started
     published_ports:
       - "9987:9987/udp"
