@@ -1,7 +1,9 @@
 outime.teamspeak3-docker
 ========================
 
-Install and use TeamSpeak3 in Docker. It uses [aheil/teamspeak3-server](https://hub.docker.com/r/aheil/teamspeak3-server/) Docker image and currently assumes a mounted host volume containing TeamSpeak3 data. 
+Install and use TeamSpeak3 in Docker. It uses [the official TeamSpeak Docker image](https://hub.docker.com/_/teamspeak) and currently assumes a mounted host volume containing TeamSpeak3 data.
+
+Note that this automatically accepts TeamSpeak's license changes to keep the server running, as this was a common problem. If you want to change this behaviour, override the default `env_ts3server_license` (equivalent to `TS3SERVER_LICENSE` in the Docker image).
 
 Requirements
 ------------

@@ -5,3 +5,4 @@ host_volume: /home/teamspeak/teamspeak3-data
 volume_mode: rw
 container_restart_policy: always
 pull_image: no
+env_ts3server_license: accept

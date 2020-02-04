@@ -19,4 +19,6 @@
     restart_policy: "{{ container_restart_policy }}"
     volumes:
       - "{{ host_volume }}:/var/ts3server:{{ volume_mode }}"
+    env:
+      TS3SERVER_LICENSE: {{ env_ts3server_license }}
 
