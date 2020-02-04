@@ -9,7 +9,7 @@
   tags: teamspeak3-run-docker-container
   docker_container:
     name: teamspeak3
-    image: "aheil/teamspeak3-server"
+    image: "teamspeak:3.11.0"
     pull: "{{ pull_image }}"
     state: started
     published_ports:
@@ -18,4 +18,5 @@
       - "30033:30033/tcp"
     restart_policy: "{{ container_restart_policy }}"
     volumes:
-      - "{{ host_volume }}:/data:{{ volume_mode }}"
+      - "{{ host_volume }}:/var/ts3server:{{ volume_mode }}"
+
