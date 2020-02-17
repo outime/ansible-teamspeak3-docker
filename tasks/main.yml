@@ -20,5 +20,5 @@
     volumes:
       - "{{ host_volume }}:/var/ts3server:{{ volume_mode }}"
     env:
-      TS3SERVER_LICENSE: {{ env_ts3server_license }}
+      TS3SERVER_LICENSE: "{{ env_ts3server_license }}"
 
