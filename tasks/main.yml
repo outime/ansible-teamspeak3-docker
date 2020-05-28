@@ -9,7 +9,7 @@
   tags: teamspeak3-run-docker-container
   docker_container:
     name: teamspeak3
-    image: "teamspeak:3.11.0"
+    image: "teamspeak:3.12.1"
     pull: "{{ pull_image }}"
     state: started
     published_ports:
